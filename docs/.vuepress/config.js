@@ -6,18 +6,19 @@ module.exports = {
     nav: [
       { text: 'Github', link: 'https://github.com/chatwoot/chatwoot' }
     ],
-    displayAllHeaders: true,
-    // sidebar: [
-    //   {
-    //     title: 'Design',
-    //     path: '/design-guidelines',
-    //     collapsable: false,
-    //   },
-    //   {
-    //     title: 'Frontend',
-    //     path: '/frontend-guidelines'
-    //   }
-    // ],
+    sidebar: [
+      '/',
+      {
+        title: 'Design',
+        collapsable: false,
+        sidebarDepth: 1,
+        children: [
+
+          'design-guidelines/colors/'
+
+        ]
+      },
+    ],
   },
   locales: {
     '/': {
